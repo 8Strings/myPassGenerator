@@ -20,13 +20,13 @@ n_total = nr_letters + nr_symbols + nr_numbers
 password = []
 
 for i in range(0, nr_letters):
-  password.append(letters[random.randint(0, len(letters)-1)])
+  password.append(random.choice(letters))
 
 for i in range(0, nr_symbols):
-  password.append(symbols[random.randint(0, len(symbols)-1)])
+  password.append(random.choice(symbols))
 
 for i in range(0, nr_numbers):
-  password.append(numbers[random.randint(0, len(numbers)-1)])
+  password.append(random.choice(numbers))
 
 random.shuffle(password)
 
